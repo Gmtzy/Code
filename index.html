@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+<div class="logo">Gadgets</div></div>
+    <nav> 
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html" id="cart-link">Cart (0)</a>
+    </nav>
+  </header>
+
+  <section id="home"> 
+    <h1>Welcome to Gadgets Shop!</h1>
+    <p>Your one-stop online store for all your needs.</p>
+    <p>SHOP NOW!!</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images (9).jpeg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>₱21,000.00</p>
+        <button onclick="addToCart('Laptop', 21000)">Add to Cart</button>
+        <button type="button">Buy Now!!</button>
+      </div>
+      <div class="product">
+        <img src="Headset.jpeg" alt="Headset">
+        <h3>HeadSet</h3>
+        <p>₱315.00</p>
+        <button onclick="addToCart('HeadSet', 315)">Add to Cart</button>
+        <button type="button">Buy Now!!</button>
+      </div>
+      <div class="product">
+        <img src="download.jpeg" alt="Iphone 16 Pro Max">
+        <h3>Iphone 16 pro Max</h3>
+        <p>₱100,220.00</p>
+        <button onclick="addToCart('Iphone 16 Pro Max', 100220)">Add to Cart</button>
+        <button type="button">Buy Now!!</button>
+                 </div>
+                 <div class="product">
+                   <img src="download (1).jpeg" alt="Ipad Pro">
+                   <h3>Ipad Pro</h3>
+                   <p>₱20,020.00</p>
+                   <button onclick="addToCart('Ipad Pro', 20020)">Add to Cart</button>
+                   <button type="button">Buy Now!!</button>
+                         </div>
+                         <div class="product">
+                           <img src="download (2).jpeg" alt="Smart Tv">
+                           <h3>Smart Tv</h3>
+                           <p>₱21,020.00</p>
+                           <button onclick="addToCart('Smart Tv', 21020)">Add to Cart</button>
+                           <button type="button">Buy Now!!</button>
+                                 </div>
+                                 <div class="product">
+                                   <img src="images (10).jpeg" alt="PS5">
+                                   <h3>PS5</h3>
+                                   <p>₱50,000.00</p>
+                                   <button onclick="addToCart('PS5', 50000)">Add to Cart</button>
+                   <button type="button">Buy Now!!</button>
+                                         </div>
+                                         <div class="product">                     <img src="download (3).jpeg" alt="JBL Go 4">
+                                           <h3>JBL GO 4</h3>
+                                           <p>₱500.00</p>
+                                           <button onclick="addToCart('JBL GO 4', 500)">Add to Cart</button>
+                     <button type="button">Buy Now!!</button>
+                                                 </div>
+                                                 <div class="product">
+                                                   <img src="images (12).jpeg" alt="Camera">
+                                                   <h3>Camera</h3>
+                                                   <p>₱20000.00</p>
+    
+    <button onclick="addToCart('Camera', 20000)">Add to Cart</button>
+                      <button type="button">Buy Now!!</button>                             
+                              </div>
+                              <div class="product">
+                                <img src="images (13).jpeg" alt="USB 3.0 Switch selector">
+                                <h3>USB 3.0 Switch Selector</h3>
+                                <p>₱520.00</p>
+                                <button onclick="addToCart('USB 3.0 Swich selecor', 520)">Add to Cart</button>    <button type="button">Buy Now!!</button>          
+      </div>
+    </div>
+  </section>
+
+ <section id="about" class="about-section">
+  <div class="container">
+    <div class="text-content">
+      <h1>Welcome to Gadgets Shop!!, your ultimate destination for cutting-edge gadgets and technology!</h1>
+      <p>At Gadget Shop, we are passionate about innovation and bringing you the latest in smart devices, electronics, and accessories. Whether you're a tech enthusiast, a gamer, or simply looking to upgrade your daily life with practical and stylish gadgets, we’ve got you covered.</p>
+          <h1>Why Choose Us?</h1>
+          <h3>Wide Range of Products:</h3>
+          <p>From smartphones and smartwatches to home automation tools and gaming accessories, we have something for everyone.</p>
+          <h3>Quality Assurance:</h3>
+          <p>We meticulously select our products to ensure they meet high standards of performance and durability.</p>
+          <h3>Customer Focus:</h3>
+          <p>Your satisfaction is our priority, and we’re committed to providing exceptional support every step of the way.</p>
+          <h3>Fast and Reliable Shipping: </h3>
+          <p>Enjoy quick delivery and secure packaging, so you can start enjoying your gadgets as soon as possible.</p>
+      <p>Our mission is to provide top-quality products that combine functionality and design at competitive prices. We partner with trusted brands and manufacturers to ensure our customers get only the best.</p>
+      <button id="learnMore">Learn More</button>
+    </div>
+    <div class="image-content">
+      <img src="images.png" alt="Our Team" />
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or need help? We're here for you! Reach out to us using the form below or via the contact information provided.</p>
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p><strong>Email: georgemaroonepito@gmail.com</strong> support@GadgetsStore.com</p>
+        <p><strong>Phone:</strong>09694229358</p>
+        <p><strong>Address:</strong> Santa Fe, Cebu</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>&copy; 2024 Gadgets. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
